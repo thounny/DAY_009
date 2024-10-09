@@ -9,7 +9,7 @@ Inspired by the nostalgic charm of older websites and desktop applications, I ai
 Check out [98.css](https://jdan.github.io/98.css/)
 
 ## Visual Demo
-![Visual Demo](./assets/DAY_009.gif)
+![Visual Demo](./images/DAY_009.gif)
 
 ---
 
