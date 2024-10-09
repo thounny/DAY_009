@@ -1,0 +1,107 @@
+/* Body and background */
+body {
+  background-color: #008080; /* Classic Windows 98 teal background */
+  font-family: "MS Sans Serif", sans-serif;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Desktop container */
+.desktop {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+/* Taskbar styles */
+.taskbar {
+  background-color: #c0c0c0; /* Gray for the taskbar */
+  height: 40px;
+  position: fixed; /* Fixed position for the taskbar */
+  bottom: 0; /* Stick to the bottom */
+  width: 100%;
+  display: flex;
+  padding: 0 10px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Start Button */
+.start-button {
+  background-color: #008080; /* Teal for the start button */
+  border: 1px solid #000; /* Black border */
+  border-radius: 2px; /* Slightly rounded corners */
+  padding: 5px 15px; /* Added padding for better click area */
+  cursor: pointer;
+  align-self: center; /* Center vertically */
+  font-weight: bold; /* Make text bold */
+  margin-right: auto; /* Align the button to the left */
+}
+
+/* Clock styles */
+.taskbar .clock {
+  color: black;
+  align-self: center; /* Center vertically */
+  margin-left: auto; /* Align the clock to the right */
+  margin-right: 20px; /* Add 20px margin to the right */
+}
+
+/* Icon styles */
+.icon {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.icon img {
+  width: 100%;
+  height: auto;
+}
+
+.icon-label {
+  font-size: 10px;
+  color: black;
+}
+
+/* Welcome window styles */
+.welcome-window {
+  width: 300px; /* Width of the welcome window */
+  position: absolute; /* Absolute position for the window */
+  top: 50%; /* Center the window vertically */
+  left: 50%; /* Center the window horizontally */
+  transform: translate(-50%, -50%); /* Center the window */
+}
+
+/* Start Menu Styles */
+.start-menu {
+  position: fixed; /* Fixed position for the Start menu */
+  bottom: 45px; /* Positioned just above the taskbar */
+  left: 10px; /* Align to the bottom left */
+  display: none; /* Initially hidden */
+  background-color: #c0c0c0; /* Gray background for the menu */
+  border: 1px solid #000; /* Black border */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Menu Content */
+.menu-content {
+  padding: 5px;
+}
+
+.menu-content ul {
+  list-style-type: none; /* No bullets */
+  padding: 0; /* No padding */
+  margin: 0; /* No margin */
+}
+
+.menu-content li {
+  padding: 5px 10px; /* Padding for menu items */
+  cursor: pointer; /* Pointer on hover */
+}
+
+.menu-content li:hover {
+  background-color: #007bff; /* Light blue on hover */
+  color: white; /* Change text color on hover */
+}

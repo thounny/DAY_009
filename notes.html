@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Markdown Notes</title>
+    <link rel="stylesheet" href="https://unpkg.com/98.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container window">
+      <div class="title-bar">
+        <div class="title-bar-text">Markdown Note Taker</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Close"></button>
+        </div>
+      </div>
+
+      <div class="window-body main-container">
+        <!-- Left side for Markdown editor and saved notes -->
+        <div class="left-panel">
+          <!-- Markdown Editor -->
+          <div class="note-editor">
+            <label for="markdown-editor">Markdown Editor:</label>
+            <textarea
+              id="markdown-editor"
+              class="textarea"
+              placeholder="Write your Markdown note..."
+            ></textarea>
+            <button id="saveNote" class="button btn-save">Save Note</button>
+          </div>
+
+          <!-- Saved Notes Section -->
+          <fieldset class="field-row-stacked note-display">
+            <legend>Saved Notes</legend>
+            <div id="notesDisplay" class="note-display"></div>
+          </fieldset>
+        </div>
+
+        <!-- Right side for live Markdown preview -->
+        <div class="right-panel">
+          <fieldset class="field-row-stacked">
+            <legend>Live Markdown Preview</legend>
+            <div id="markdownPreview" class="preview-content textarea"></div>
+          </fieldset>
+        </div>
+      </div>
+
+      <!-- Status Bar -->
+      <div class="status-bar">
+        <p class="status-bar-field">Ready</p>
+        <p class="status-bar-field">
+          Last saved: <span id="lastSavedTime">N/A</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="start-menu" id="startMenu">
+      <div class="menu-content">
+        <ul>
+          <li onclick="openNoteTaker()">Home</li>
+          <li onclick="openGitHub()">GitHub</li>
+          <li onclick="exitApplication()">Exit</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="taskbar">
+      <div class="start-button" onclick="toggleStartMenu()">Start</div>
+      <div class="clock" id="clock">12:00 PM</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
