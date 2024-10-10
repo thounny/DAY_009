@@ -157,7 +157,7 @@ document
 
 // Function to open the Markdown Note Taker
 function openNoteTaker() {
-  window.location.href = "index.html"; // Change to your note taker page
+  window.location.href = "./index.html"; // Change to your note taker page
 }
 
 // Function to open GitHub in a new tab
